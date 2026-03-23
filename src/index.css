@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 213 15% 15%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 213 15% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 15% 15%;
+    
+    --primary: 213 90% 56%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 213 80% 92%;
+    --secondary-foreground: 213 75% 20%;
+    
+    --tertiary: 276 68% 76%;
+    --tertiary-foreground: 276 68% 15%;
+    
+    --neutral: 0 0% 98%;
+    --neutral-foreground: 213 15% 15%;
+    
+    --success: 152 46% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 52%;
+    --warning-foreground: 0 0% 100%;
+    
+    --muted: 210 16% 95%;
+    --muted-foreground: 210 10% 45%;
+    
+    --accent: 213 80% 92%;
+    --accent-foreground: 213 75% 20%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 210 15% 88%;
+    --input: 210 15% 88%;
+    --ring: 213 90% 35%;
+    
+    --radius: 12px;
+    
+    --gray-50: 210 20% 98%;
+    --gray-100: 210 16% 95%;
+    --gray-200: 210 15% 88%;
+    --gray-300: 210 11% 74%;
+    --gray-400: 210 9% 60%;
+    --gray-500: 210 10% 45%;
+    --gray-600: 210 12% 35%;
+    --gray-700: 210 14% 25%;
+    --gray-800: 210 16% 17%;
+    --gray-900: 210 18% 12%;
+  }
+
+  .dark {
+    --background: 213 15% 12%;
+    --foreground: 210 20% 98%;
+    
+    --card: 213 15% 15%;
+    --card-foreground: 210 20% 98%;
+    
+    --popover: 213 15% 15%;
+    --popover-foreground: 210 20% 98%;
+    
+    --primary: 213 90% 56%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 213 20% 25%;
+    --secondary-foreground: 210 20% 98%;
+    
+    --tertiary: 276 68% 76%;
+    --tertiary-foreground: 0 0% 100%;
+    
+    --neutral: 213 15% 15%;
+    --neutral-foreground: 210 20% 98%;
+    
+    --success: 152 46% 45%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 38 92% 52%;
+    --warning-foreground: 0 0% 100%;
+    
+    --muted: 213 15% 20%;
+    --muted-foreground: 210 15% 65%;
+    
+    --accent: 213 20% 25%;
+    --accent-foreground: 210 20% 98%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 213 15% 25%;
+    --input: 213 15% 25%;
+    --ring: 213 90% 56%;
+    
+    --gray-50: 213 15% 12%;
+    --gray-100: 213 15% 15%;
+    --gray-200: 213 15% 20%;
+    --gray-300: 213 15% 30%;
+    --gray-400: 213 10% 45%;
+    --gray-500: 210 10% 55%;
+    --gray-600: 210 15% 65%;
+    --gray-700: 210 16% 75%;
+    --gray-800: 210 18% 85%;
+    --gray-900: 210 20% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html,
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

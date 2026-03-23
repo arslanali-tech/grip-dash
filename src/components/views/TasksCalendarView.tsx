@@ -1,0 +1,1 @@
+/* This file is no longer needed as its functionality has been replaced by CalendarView.tsx */
